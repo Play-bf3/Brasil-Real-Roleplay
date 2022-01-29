@@ -13,7 +13,7 @@ module.exports = {
 
     const limite = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:block:918884825652420698> <:W_aaaaBR:844415186474500166>Para executar este comando precisa a permissão \`gerenciar emojis e stickers\` !`)
+    .setDescription(`Para executar este comando precisa a permissão \`gerenciar emojis e stickers\` !`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
   
@@ -21,7 +21,7 @@ module.exports = {
   
     const ad = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:block:918884825652420698> <:W_aaaaBR:844415186474500166>Não é possível executar este o comando, preciso da permissão de \`gerenciar emojis e stickers\` !`)
+    .setDescription(`Não é possível executar este o comando, preciso da permissão de \`gerenciar emojis e stickers\` !`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
   if(!message.guild.me.permissions.has("MANAGE_EMOJIS_AND_STICKERS")) return  message.reply({embeds:[ad]})
@@ -40,7 +40,7 @@ module.exports = {
  
     const nad = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:fechar:918747498984665108> | Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
+    .setDescription(` | Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
     if(emojis >= tcount) return message.reply(nad);
@@ -62,7 +62,7 @@ module.exports = {
  
     const nad = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:fechar:918747498984665108> | Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
+    .setDescription(Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
     if(emojis >= tcount) return message.reply(nad);
@@ -84,13 +84,13 @@ module.exports = {
 			let CheckEmoji = parse(emoji, { assetType: 'png' });
     const nad = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:fechar:918747498984665108> | Desculpe, não consigo localizar o emoji que queira adicionar, tente novamente.`)
+    .setDescription(`Desculpe, não consigo localizar o emoji que queira adicionar, tente novamente.`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
 			if (!CheckEmoji[0]) return message.reply({embeds:[nad]});
     const naddsd = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:fechar:918747498984665108> | Este emoji já está adicionado no sistema do discord.`)
+    .setDescription(`Este emoji já está adicionado no sistema do discord.`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
 			message.reply({embeds:[naddsd]});
@@ -99,7 +99,7 @@ module.exports = {
 
     const nad = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:fechar:918747498984665108> | Ops, ${message.author}. Infelizmente não encontrei nenhum arquivo ou emoji válido, tente novamente.`)
+    .setDescription(`Ops, ${message.author}. Infelizmente não encontrei nenhum arquivo ou emoji válido, tente novamente.`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
  return message.reply({embeds:[nad]});
@@ -110,7 +110,7 @@ module.exports = {
 
     const nad = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:e_fixadoTDN:844359619886579732> | ${message.member} insira um nome para o emoji.`)
+    .setDescription(` | ${message.member} insira um nome para o emoji.`)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
     if(!emoji) return message.reply({embeds:[nad]});
@@ -119,7 +119,7 @@ module.exports = {
 if(img.size > 256000){
   const nad = new Discord.MessageEmbed()
   .setColor('5fa5e3')
-  .setDescription(`<:fechar:918747498984665108> | Este arquivo é muito grande pelos requisitos dos discord com limite de 256kb.`)
+  .setDescription(` Este arquivo é muito grande pelos requisitos dos discord com limite de 256kb.`)
   .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
   .setTimestamp();
   return message.reply({embeds:[nad]});
@@ -134,7 +134,7 @@ if(img.size > 256000){
 
   const nad = new Discord.MessageEmbed()
   .setColor('5fa5e3')
-  .setDescription(`<:fechar:918747498984665108> | Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
+  .setDescription(` Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
   .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
   .setTimestamp();
   if(emojis >= tcount) return message.reply({embeds:[nad]});
@@ -157,7 +157,7 @@ return message.reply({embeds:[Added]});
 
   const nad = new Discord.MessageEmbed()
   .setColor('5fa5e3')
-  .setDescription(`<:fechar:918747498984665108> | Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
+  .setDescription(`Infelizmente não consigo adicionar mais emojis, o seu servidor atingiu o limite de ${tcount} emojis.`)
   .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
   .setTimestamp();
   if(emojis >= tcount) return message.reply({embeds:[nad]});
@@ -174,7 +174,7 @@ return message.reply({embeds:[Added]});
   }else{
     const Added = new Discord.MessageEmbed()
     .setColor('5fa5e3')
-    .setDescription(`<:fechar:918747498984665108> | Esse formato é inválido.    `)
+    .setDescription(`Esse formato é inválido.    `)
     .setFooter(`${message.guild.name}`,message.guild.iconURL({ dynamic: true, format: "png", size: 1024 }))
     .setTimestamp();
   return message.reply({embeds:[Added]});
